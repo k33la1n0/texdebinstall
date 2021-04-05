@@ -169,7 +169,6 @@ echo "!...latexmk............................!"
 echo "!...ghostscript........................!"
 echo "!...tesseract-ocr......................!"
 echo "!...tesseract-ocr-deu..................!"
-echo "!...libffi6............................!"
 echo "!...pngquant...........................!"
 echo "----------------------------------------"
 echo ""
@@ -178,7 +177,7 @@ echo "yes (y) | no (n)"
 read -n 1 -p "" ans;
 case $ans in
     y|yes|Y|1)
-        sudo apt install latexmk ghostscript tesseract-ocr tesseract-ocr-deu libffi6 pngquant -y;;
+        sudo apt install latexmk ghostscript tesseract-ocr tesseract-ocr-deu pngquant -y;;
     n|no|N|2)
         exit;;
 esac
